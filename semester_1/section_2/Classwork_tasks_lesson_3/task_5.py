@@ -1,0 +1,7 @@
+my_set1 = set(input())
+my_set2 = set(input())
+my_set3 = set(input())
+my_set4 = my_set1.difference((my_set2.union(my_set3)))
+my_set5 = my_set2.difference((my_set1.union(my_set3)))
+my_set6 = my_set3.difference((my_set1.union(my_set2)))
+print(*my_set4.union(my_set5).union(my_set6))
