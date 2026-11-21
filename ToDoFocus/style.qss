@@ -1,0 +1,154 @@
+/* --- БАЗОВЫЕ СТИЛИ --- */
+QWidget {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+QLabel#label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #cba6f7;
+    padding: 10px;
+    background-color: transparent;
+}
+
+QLabel#label_3 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5e0dc;
+    padding: 5px;
+    background-color: transparent;
+}
+
+QLabel#label_2 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #f5e0dc;
+    padding: 5px;
+    background-color: transparent;
+}
+
+/* --- ОБЩИЙ СТИЛЬ КНОПОК (для "Дальше" и других) --- */
+QPushButton {
+    background-color: #cba6f7;
+    color: #11111b;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 16px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+QPushButton:hover {
+    background-color: #b4befe;
+}
+
+QPushButton:pressed {
+    background-color: #89b4fa;
+}
+
+/* --- СТРОГО ДЛЯ ПЛЮСА И МУСОРКИ (чтобы они были квадратными) --- */
+QPushButton#pushButton, QPushButton#pushButton_2 {
+    min-width: 50px;
+    min-height: 50px;
+    max-width: 60px;
+    max-height: 60px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+/* --- ПОЛЯ ВВОДА, СПИСКИ, КАЛЕНДАРЬ --- */
+QLineEdit {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 2px solid #45475a;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #cba6f7;
+}
+
+QListWidget {
+    background-color: #181825;
+    border: 2px solid #313244;
+    border-radius: 10px;
+    padding: 8px;
+    font-size: 17px;
+}
+
+QListWidget::item {
+    padding: 12px 15px;
+    border-radius: 8px;
+    margin-bottom: 6px;
+    background-color: #1e1e2e;
+    border: 1px solid #313244;
+}
+
+QListWidget::item:selected {
+    background-color: #45475a;
+    color: #cba6f7;
+    border: 1px solid #cba6f7;
+}
+
+QListWidget::item:hover {
+    background-color: #313244;
+}
+
+QCalendarWidget QWidget {
+    background-color: #1e1e2e;
+    border-radius: 10px;
+}
+
+QCalendarWidget QAbstractItemView {
+    background-color: #181825;
+    selection-background-color: #cba6f7;
+    selection-color: #11111b;
+    border-radius: 10px;
+}
+
+/* --- ОКНА ДИАЛОГОВ (Время) --- */
+QDialog {
+    background-color: #1e1e2e;
+    color: #cdd6f4;
+}
+
+QTimeEdit {
+    background-color: #313244;
+    color: #cdd6f4;
+    border: 2px solid #45475a;
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+QTimeEdit:focus {
+    border: 2px solid #cba6f7;
+}
+
+/* ========================================================
+   ПОЛНЫЙ СБРОС СТИЛЕЙ ДЛЯ ОКНА ОШИБКИ (Form)
+   ======================================================== */
+QWidget#Form {
+    background-color: #f0f0f0;
+}
+
+QWidget#Form QLabel {
+    color: #000000;
+    font-size: 14px;
+    background-color: transparent;
+}
+
+QWidget#Form QPushButton {
+    background-color: #e0e0e0;
+    color: #000000;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 5px 15px;
+    font-size: 14px;
+    min-width: 120px;
+    min-height: 30px;
+}
