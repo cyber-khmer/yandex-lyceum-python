@@ -1,1 +1,0 @@
-print('\n'.join([str(i) if i > 0 else 'СТАРТ!' for i in range(int(input()), -1, -1)]))
